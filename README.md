@@ -7,8 +7,10 @@ Please refer to [get_started.md](docs/get_started.md) for installation. Or, if y
 
 ## Getting Started
 
-1.First install mmdetection follow the above installation step.
-2.please download deepfasion2 dataset [here](https://drive.google.com/drive/folders/125F48fsMBz2EF0Cpqk6aaHet5VH399Ok) and annotation file [here]()
+1.First install mmdetection follow the above installation step.   
+
+2.please download deepfasion2 dataset [here](https://drive.google.com/drive/folders/125F48fsMBz2EF0Cpqk6aaHet5VH399Ok) and annotation file [here](https://drive.google.com/drive/folders/1Pf3iu58CjzACnXJPz9Y6Gm0vzwvOOrQd?usp=sharing)    
+
 3.make the file like this.
 ```plain
 mmdetection
@@ -22,10 +24,10 @@ mmdetection
 │   │   ├── validation
 │   │   ├── test
 ```
-Note that train dir is a dir include all images. and validation dir could also do like this:
-(1)Make a dir named 'train' in data/deepfashion2_zip.(maybe you need to rename the dir name for deepfashion2_zip when you download the dataset)
-(2)Unzip the train.zip in deepfashion2 dataset, there is a annos dir and a image dir.
-(3)ln -s /image dir/ /data/deepfashion2_zip/train/
+Note that train dir is a dir include all images. and validation dir could also do like this:    
+(1)Make a dir named 'train' in data/deepfashion2_zip.(maybe you need to rename the dir name for deepfashion2_zip when you download the dataset)    
+(2)Unzip the train.zip in deepfashion2 dataset, there is a annos dir and a image dir.   
+(3)ln -s /image dir/ /data/deepfashion2_zip/train/   
 
 5.run the train command followed by [here](docs/1_exist_data_model.md): Training on multiple GPUs.(a machine with n GPUs)
 ```shell
